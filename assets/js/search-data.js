@@ -95,6 +95,12 @@ ninja.data = [{
           section: "News",},{id: "news-i-presented-our-work-on-testing-memory-consistency-at-stanford-university",
           title: 'I presented our work on testing memory consistency at Stanford University.',
           description: "",
+          section: "News",},{id: "news-our-sigarch-blog-on-finding-memory-model-errors-in-a-recent-gpu-synchronization-paper-was-released-highlighting-opportunties-for-future-research-and-collaboration",
+          title: 'Our SIGARCH blog on finding memory model errors in a recent GPU synchronization...',
+          description: "",
+          section: "News",},{id: "news-our-work-on-assessing-and-addressing-webgpu-memory-safety-in-the-presence-of-data-races-saferace-was-accepted-to-oopsla-2025",
+          title: 'Our work on assessing and addressing WebGPU memory safety in the presence of...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
