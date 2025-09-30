@@ -30,5 +30,5 @@ I am a sixth (and final) year PhD candidate and an [NDSEG Fellow](https://ndseg.
 I am currently collaborating on projects related to GPU security and compiler correctness. I am also actively contributing to [llama.cpp](https://github.com/ggml-org/llama.cpp) in order to bring GPU-accelerated inference to the browser using WebGPU, opening up research opportunities in portable performance, efficient LLM quantization, and improving GPU programming models.
 
 <div class="alert alert-primary" role="alert">
-I am currently exploring full-time opportunities! I am interested in working on GPU (or other accelerator) programming languages and architecture, AI infrastructure (especially but not limited to *local* LLM inference), or other roles related to parallel and concurrent programming. Please reach out if you have an opening or want to learn more about my research.
+I am currently exploring full-time opportunities! I am interested in working on GPU (or other accelerator) programming languages and architecture, AI infrastructure (especially but not limited to <i>local</i> LLM inference), or other roles related to parallel and concurrent programming. Please reach out if you have an opening or want to learn more about my research.
 </div>
