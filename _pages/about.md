@@ -25,6 +25,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a fifth year PhD candidate and an [NDSEG Fellow](https://ndseg.org/) at UC Santa Cruz, where I work with [Tyler Sorensen](https://users.soe.ucsc.edu/~tsorensen/) and am generally affiliated with the [LSD Lab](https://lsd.ucsc.edu/).
+I am a sixth (and final) year PhD candidate and an [NDSEG Fellow](https://ndseg.org/) at UC Santa Cruz, where I work with [Tyler Sorensen](https://users.soe.ucsc.edu/~tsorensen/) and am generally affiliated with the [LSD Lab](https://lsd.ucsc.edu/). My research interests are in parallel and concurrent programming. My work has focused on GPU programming models, including designing and evaluating techniques to test the conformance of compilers and hardware to memory model specifications [1](assets/pdf/mc_mutants.pdf) [2](assets/pdf/gpuharbor.pdf), and testing and improving the safety properties of GPU programming languages in the face of data races [3](assets/pdf/saferace.pdf).
 
-My research interests are in parallel and concurrent programming, specifically how multi-core and distributed systems are implemented. My current work focuses on GPU memory models, designing and evaluating techniques to test the conformance of compilers and hardware to specifications. I am also working on ways to exploit weak memory behaviors to increase applications' performance, and to test and improve the safety properties of GPU programming models in the face of data races or other undefined behavior.
+I am currently collaborating on projects related to GPU security and compiler correctness. I am also actively contributing to [llama.cpp](https://github.com/ggml-org/llama.cpp) in order to bring GPU-accelerated inference to the browser using WebGPU, opening up research opportunities in portable performance, efficient LLM quantization, and improving GPU programming models.
+
+<div class="alert alert-primary" role="alert">
+I am currently exploring full-time opportunities! I am interested in working on GPU (or other accelerator) programming languages and architecture, AI infrastructure (especially but not limited to _local_ LLM inference), or other roles related to parallel and concurrent programming. Please reach out if you have an opening or want to learn more about my research.
+</div>
