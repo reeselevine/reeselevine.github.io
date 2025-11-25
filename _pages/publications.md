@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: 
+description:
 nav: true
 nav_order: 1
 ---
@@ -13,14 +13,16 @@ nav_order: 1
 
 {% include bib_search.liquid %}
 
-### conference 
+### conference
+
 <div class="publications">
 
 {% bibliography -f conference-papers %}
 
 </div>
 
-### workshop 
+### workshop
+
 <div class="publications">
 
 {% bibliography -f workshop-papers %}
