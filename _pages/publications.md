@@ -28,3 +28,11 @@ nav_order: 1
 {% bibliography -f workshop-papers %}
 
 </div>
+
+### articles
+
+<div class="publications">
+
+{% bibliography -f articles %}
+
+</div>
