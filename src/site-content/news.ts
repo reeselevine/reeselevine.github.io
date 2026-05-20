@@ -6,6 +6,11 @@ export type RawNewsItem = {
 
 export const rawNewsItems: RawNewsItem[] = [
   {
+    slug: 'behind-bars',
+    date: '2026-5-1',
+    body: 'Our [USENIX Security 2026](https://www.usenix.org/conference/usenixsecurity26) paper, [Behind Bars](https://www.usenix.org/system/files/conference/usenixsecurity26/sec26_prepub_gu-cheng.pdf), is now available. Congrats to [Cheng](https://www.linkedin.com/in/cheng-gu-9090421b4/) who led this work!',
+  },
+  {
     slug: 'memory_disorder',
     date: '2026-1-13',
     body: 'Our paper, [Memory DisOrder](https://arxiv.org/abs/2601.08770), is now on arXiv. Congrats to [Sean](https://seansiddens.github.io/) and [Sanya](https://www.linkedin.com/in/sanyasrivas/) who led this work!',

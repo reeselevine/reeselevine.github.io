@@ -55,7 +55,11 @@ const parseNewsItems = (): NewsItem[] =>
 const parsePublications = (): Publication[] => {
   return rawPublications.map((publication) => ({
     ...publication,
-    pdf: publication.pdf ? pdfAssets[publication.pdf] : undefined,
+    pdf: publication.pdf
+      ? publication.pdf.startsWith('http')
+        ? publication.pdf
+        : pdfAssets[publication.pdf]
+      : undefined,
     arxiv: publication.arxiv ? `https://arxiv.org/abs/${publication.arxiv}` : undefined,
   }));
 };

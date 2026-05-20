@@ -9,8 +9,15 @@ const sectionOrder: Array<{ id: SectionId; href: string }> = [
 ];
 
 const markdownToHtml = (source: string) => {
+  const base = import.meta.env.BASE_URL;
+
   return source
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_match, text: string, href: string) => {
+      const normalizedHref = href.startsWith('assets/')
+        ? `${base}${href}`.replace(/([^:]\/)\/+/g, '$1')
+        : href;
+      return `<a href="${normalizedHref}">${text}</a>`;
+    })
     .replace(/_([^_]+)_/g, '<em>$1</em>');
 };
 

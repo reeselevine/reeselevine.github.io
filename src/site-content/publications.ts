@@ -15,6 +15,16 @@ export type RawPublication = {
 
 export const rawPublications: RawPublication[] = [
   {
+    key: 'behind-bars',
+    kind: 'conference',
+    abbr: 'USENIX Security',
+    author: 'Gu, Cheng and Levine, Reese and Zhang, Zhenkai and Sorensen, Tyler and Guo, Yanan',
+    title: 'Behind Bars: A Side-Channel Attack on NVIDIA MIG Cache Partitioning Using Memory Barriers',
+    year: '2026',
+    venue: 'USENIX Security Symposium',
+    pdf: 'https://www.usenix.org/system/files/conference/usenixsecurity26/sec26_prepub_gu-cheng.pdf',
+  },
+  {
     key: 'memory-disorder',
     kind: 'articles',
     abbr: 'arXiv',
