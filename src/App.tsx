@@ -1,4 +1,4 @@
-import { siteContent, type Publication } from './content';
+import { markdownAssetLinks, siteContent, type Publication } from './content';
 
 type SectionId = 'about' | 'news' | 'publications';
 
@@ -13,9 +13,11 @@ const markdownToHtml = (source: string) => {
 
   return source
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_match, text: string, href: string) => {
-      const normalizedHref = href.startsWith('assets/')
-        ? `${base}${href}`.replace(/([^:]\/)\/+/g, '$1')
-        : href;
+      const normalizedHref = markdownAssetLinks[href]
+        ? markdownAssetLinks[href]
+        : href.startsWith('assets/')
+          ? `${base}${href}`.replace(/([^:]\/)\/+/g, '$1')
+          : href;
       return `<a href="${normalizedHref}">${text}</a>`;
     })
     .replace(/_([^_]+)_/g, '<em>$1</em>');

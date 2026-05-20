@@ -37,6 +37,14 @@ const pdfAssets: Record<string, string> = {
   'yarch_pmcs.pdf': yarchPdf,
 };
 
+export const markdownAssetLinks: Record<string, string> = {
+  'assets/pdf/cv.pdf': pdfAssets['cv.pdf'],
+  'assets/pdf/gpuharbor.pdf': pdfAssets['gpuharbor.pdf'],
+  'assets/pdf/mc_mutants.pdf': pdfAssets['mc_mutants.pdf'],
+  'assets/pdf/saferace.pdf': pdfAssets['saferace.pdf'],
+  'assets/pdf/yarch_pmcs.pdf': pdfAssets['yarch_pmcs.pdf'],
+};
+
 const normalizeDate = (value: string) => {
   const [year, month, day] = value.split('-').map((part) => Number(part));
   const utcValue = Date.UTC(year, month - 1, day);
