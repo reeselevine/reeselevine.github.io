@@ -6,6 +6,11 @@ export type RawNewsItem = {
 
 export const rawNewsItems: RawNewsItem[] = [
   {
+    slug: 'llamas-on-the-web',
+    date: '2026-5-20',
+    body: "We're introducing Llamas on the Web, a WebGPU backend for llama.cpp that enables running LLMs in the browser with GPU acceleration. Check out our [blog post](https://reeselevine.github.io/llamas-on-the-web/) and [paper](https://arxiv.org/abs/2605.20706)!",
+  },
+  {
     slug: 'behind-bars',
     date: '2026-5-1',
     body: 'Our [USENIX Security 2026](https://www.usenix.org/conference/usenixsecurity26) paper, [Behind Bars](https://www.usenix.org/system/files/conference/usenixsecurity26/sec26_prepub_gu-cheng.pdf), is now available. Congrats to [Cheng](https://www.linkedin.com/in/cheng-gu-9090421b4/) who led this work!',
