@@ -44,6 +44,20 @@ const decodeLatexEscapes = (value: string) =>
     .replace(/\s+/g, ' ')
     .trim();
 
+const renderPublicationAuthors = (authors: string) =>
+  decodeLatexEscapes(authors)
+    .split(/\s+and\s+/)
+    .map((author) => {
+      const [lastName, ...firstNames] = author.split(',').map((part) => part.trim());
+      return firstNames.length > 0 ? `${firstNames.join(' ')} ${lastName}` : author;
+    })
+    .map((author, index) => (
+      <span key={`${author}-${index}`}>
+        {index > 0 ? ', ' : null}
+        {author === 'Reese Levine' ? <strong>{author}</strong> : author}
+      </span>
+    ));
+
 const renderPublicationMeta = (publication: Publication) => {
   const venueParts = [publication.venue, publication.publisher, publication.year]
     .filter(Boolean)
@@ -52,7 +66,7 @@ const renderPublicationMeta = (publication: Publication) => {
   return (
     <>
       {publication.author ? (
-        <p className="publication-authors">{decodeLatexEscapes(publication.author)}</p>
+        <p className="publication-authors">{renderPublicationAuthors(publication.author)}</p>
       ) : null}
       {venueParts ? <p className="publication-venue">{decodeLatexEscapes(venueParts)}</p> : null}
     </>

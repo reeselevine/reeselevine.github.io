@@ -1,6 +1,7 @@
 import aboutSource from './site-content/about.md?raw';
 import cvPdf from '../assets/pdf/cv.pdf';
 import gpuharborPdf from '../assets/pdf/gpuharbor.pdf';
+import ismm2026Pdf from '../assets/pdf/ismm-2026.pdf';
 import mcMutantsPdf from '../assets/pdf/mc_mutants.pdf';
 import saferacePdf from '../assets/pdf/saferace.pdf';
 import yarchPdf from '../assets/pdf/yarch_pmcs.pdf';
@@ -32,6 +33,7 @@ export type Publication = {
 const pdfAssets: Record<string, string> = {
   'cv.pdf': cvPdf,
   'gpuharbor.pdf': gpuharborPdf,
+  'ismm-2026.pdf': ismm2026Pdf,
   'mc_mutants.pdf': mcMutantsPdf,
   'saferace.pdf': saferacePdf,
   'yarch_pmcs.pdf': yarchPdf,
@@ -40,6 +42,7 @@ const pdfAssets: Record<string, string> = {
 export const markdownAssetLinks: Record<string, string> = {
   'assets/pdf/cv.pdf': pdfAssets['cv.pdf'],
   'assets/pdf/gpuharbor.pdf': pdfAssets['gpuharbor.pdf'],
+  'assets/pdf/ismm-2026.pdf': pdfAssets['ismm-2026.pdf'],
   'assets/pdf/mc_mutants.pdf': pdfAssets['mc_mutants.pdf'],
   'assets/pdf/saferace.pdf': pdfAssets['saferace.pdf'],
   'assets/pdf/yarch_pmcs.pdf': pdfAssets['yarch_pmcs.pdf'],

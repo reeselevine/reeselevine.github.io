@@ -15,6 +15,28 @@ export type RawPublication = {
 
 export const rawPublications: RawPublication[] = [
   {
+    key: 'llamas-on-the-web',
+    kind: 'articles',
+    abbr: 'arXiv',
+    author: 'Levine, Reese and Sharma, Rithik and Jain, Nikhil and Ramesh, Abhijit and Chen, Zheyuan and Abbas, Neha and Contini, James and Sorensen, Tyler',
+    title: 'Llamas on the Web: Memory-Efficient, Performance-Portable, and Multi-Precision LLM Inference with WebGPU',
+    year: '2026',
+    venue: 'arXiv preprint arXiv:2605.20706',
+    blog: 'https://reeselevine.github.io/llamas-on-the-web/',
+    arxiv: '2605.20706',
+  },
+  {
+    key: 'grace-hopper-consistency-coherence',
+    kind: 'conference',
+    abbr: 'ISMM',
+    author: 'Bagchi, Soham and Srivastava, Sanya and Levine, Reese and Sorensen, Tyler and Stutsman, Ryan and Nagarajan, Vijay',
+    title: 'Consistency and Coherence of the NVIDIA Grace-Hopper Superchip',
+    year: '2026',
+    venue: 'International Symposium on Memory Management (ISMM)',
+    publisher: 'ACM',
+    pdf: 'ismm-2026.pdf',
+  },
+  {
     key: 'behind-bars',
     kind: 'conference',
     abbr: 'USENIX Security',
